@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
 import 'package:url_launcher/url_launcher.dart';
+import '../../../utils/constants/constants.dart';
 import '../../../utils/styles/styles.dart';
 import '../controllers/appointment_detail_controller.dart';
 
@@ -129,7 +130,7 @@ class AppointmentDetailView extends GetView<AppointmentDetailController> {
                             SizedBox(
                               height: 50,
                               child: Text(
-                                ': \$${controller.selectedTimeslot.price}${' (Paid)'.tr}',
+                                currencySign + ': \$${controller.selectedTimeslot.price}${' (Paid)'.tr}',
                               ),
                             ),
                           ],
