@@ -121,10 +121,6 @@ flutter:
     - assets/animations/
 
   fonts:
-    - family: MyIcons
-      fonts:
-        - asset: assets/fonts/icon/MyIcons.ttf
-
     - family: Almarai
       fonts:
         - asset: assets/fonts/Almarai/Almarai-ExtraBold.ttf
