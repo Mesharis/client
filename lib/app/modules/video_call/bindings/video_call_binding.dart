@@ -13,7 +13,7 @@
 //   }
 // }
 import 'package:get/get.dart';
-import 'package:hallo_doctor_client/app/modules/video_call/controllers/video_call_controller.dart';
+import '../controllers/video_call_controller.dart';
 
 class VideoCallBinding extends Bindings {
   @override

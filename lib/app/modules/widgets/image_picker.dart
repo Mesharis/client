@@ -4,9 +4,10 @@ import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:hallo_doctor_client/app/utils/colors_manager.dart';
 import 'package:image_pickers/image_pickers.dart';
 import 'package:permission_handler/permission_handler.dart';
+
+import '../../utils/colors_manager.dart';
 
 
 class ImagePickerDialog {

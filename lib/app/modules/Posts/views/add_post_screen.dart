@@ -6,12 +6,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:hallo_doctor_client/app/modules/Posts/controllers/posts_controller.dart';
-import 'package:hallo_doctor_client/app/modules/Posts/widgets/progress_button.dart';
-import 'package:hallo_doctor_client/app/utils/colors_manager.dart';
-import 'package:hallo_doctor_client/app/utils/constants/sizes_manager.dart';
-import 'package:hallo_doctor_client/app/utils/extensions/num.dart';
-import 'package:hallo_doctor_client/app/utils/styles/styles.dart';
+import 'package:hallo_doctor_doctor_app/app/modules/Posts/controllers/posts_controller.dart';
+import 'package:hallo_doctor_doctor_app/app/modules/Posts/widgets/progress_button.dart';
+import 'package:hallo_doctor_doctor_app/app/utils/colors_manager.dart';
+import 'package:hallo_doctor_doctor_app/app/utils/constants/sizes_manager.dart';
+import 'package:hallo_doctor_doctor_app/app/utils/extensions/num.dart';
+import 'package:hallo_doctor_doctor_app/app/utils/styles/styles.dart';
 import 'package:iconsax/iconsax.dart';
 
 class AddPostScreen extends GetView<PostsController> {
@@ -46,10 +46,10 @@ class AddPostScreen extends GetView<PostsController> {
                             maxLines: 8,
                             decoration: InputDecoration(
                               counterStyle:
-                                  TextStyle(fontWeight: FontWeight.w200),
+                              TextStyle(fontWeight: FontWeight.w200),
                               filled: true,
                               fillColor:
-                                  ColorsManager.veryLightGrey.withOpacity(.5),
+                              ColorsManager.veryLightGrey.withOpacity(.5),
                               hintText: 'ما الذي يدور في ذهنك؟',
                               border: InputBorder.none,
                               focusedBorder: InputBorder.none,
@@ -140,7 +140,7 @@ class AddPostScreen extends GetView<PostsController> {
                             width: double.infinity,
                             decoration: BoxDecoration(
                               color:
-                                  ColorsManager.veryLightGrey.withOpacity(.5),
+                              ColorsManager.veryLightGrey.withOpacity(.5),
                               borderRadius: BorderRadius.circular(12),
                             ),
                             padding: const EdgeInsets.all(20),
@@ -213,29 +213,29 @@ class ImageWidget extends GetWidget<PostsController> {
   @override
   Widget build(BuildContext context) {
     return Obx(
-      () => controller.image.value.path != ''
+          () => controller.image.value.path != ''
           ? Stack(
-              children: [
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(12),
-                  child: Image.file(
-                    controller.image.value,
-                    fit: BoxFit.cover,
-                    errorBuilder: (context, error, stackTrace) => const Center(
-                      child: Icon(CupertinoIcons.photo_fill_on_rectangle_fill),
-                    ),
-                  ),
-                ),
-                IconButton(
-                  onPressed: () {
-                    controller.imageUrl.value = "";
-                    controller.image.value = File("");
-                    controller.update();
-                  },
-                  icon: Icon(Icons.delete, color: Colors.red),
-                ),
-              ],
-            )
+        children: [
+          ClipRRect(
+            borderRadius: BorderRadius.circular(12),
+            child: Image.file(
+              controller.image.value,
+              fit: BoxFit.cover,
+              errorBuilder: (context, error, stackTrace) => const Center(
+                child: Icon(CupertinoIcons.photo_fill_on_rectangle_fill),
+              ),
+            ),
+          ),
+          IconButton(
+            onPressed: () {
+              controller.imageUrl.value = "";
+              controller.image.value = File("");
+              controller.update();
+            },
+            icon: Icon(Icons.delete, color: Colors.red),
+          ),
+        ],
+      )
           : const SizedBox(),
     );
   }

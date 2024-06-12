@@ -3,9 +3,9 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-import 'package:hallo_doctor_client/app/utils/styles/styles.dart';
 import 'package:myfatoorah_flutter/myfatoorah_flutter.dart';
 
+import '../../../utils/styles/styles.dart';
 import '../controllers/payment_controller.dart';
 import '../widgets/progress_button.dart';
 

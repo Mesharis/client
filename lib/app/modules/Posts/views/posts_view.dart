@@ -1,12 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
-
 import 'package:get/get.dart';
-import 'package:hallo_doctor_client/app/service/posts_services.dart';
-import 'package:hallo_doctor_client/app/utils/styles/styles.dart';
-
 import '../../../models/post_model.dart';
+import '../../../service/posts_services.dart';
+import '../../../utils/styles/styles.dart';
 import '../controllers/posts_controller.dart';
 import '../widgets/post_widget.dart';
 import 'add_post_screen.dart';

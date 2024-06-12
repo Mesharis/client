@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:get/get.dart';
-import 'package:hallo_doctor_client/app/utils/extensions/num.dart';
-import 'package:hallo_doctor_client/app/utils/extensions/string.dart';
-
+import 'package:hallo_doctor_doctor_app/app/utils/extensions/export.dart';
 import '../../utils/colors_manager.dart';
 import '../../utils/constants/styles_manager.dart';
 
@@ -144,15 +141,15 @@ class _CustomTextFieldState extends State<CustomTextField> {
           autovalidateMode: AutovalidateMode.onUserInteraction,
           onChanged: widget.isPassword
               ? (password) {
-                  setState(() {
-                    passwordStrength = password.measurePasswordStrength();
-                    // strengthColor =
-                    //     passwordStrength.getColorForPasswordStrength();
-                  });
-                }
+            setState(() {
+              passwordStrength = password.measurePasswordStrength();
+              // strengthColor =
+              //     passwordStrength.getColorForPasswordStrength();
+            });
+          }
               : (txt) {
-                  if (widget.onChange != null) widget.onChange!(txt);
-                },
+            if (widget.onChange != null) widget.onChange!(txt);
+          },
           inputFormatters: widget.formattedType ?? [],
           style: StylesManager.medium(
             fontSize: widget.textSize ?? 14,
@@ -211,32 +208,32 @@ class _CustomTextFieldState extends State<CustomTextField> {
             prefixIcon: widget.prefixIcon,
             suffixIcon: widget.isPassword
                 ? GestureDetector(
-                    onTap: () {
-                      showPassword = !showPassword;
-                      setState(() {});
-                    },
-                    child: Icon(
-                      showPassword
-                          ? Icons.remove_red_eye
-                          : Icons.remove_red_eye,
-                      size: 16.h,
-                    ),
-                  )
+              onTap: () {
+                showPassword = !showPassword;
+                setState(() {});
+              },
+              child: Icon(
+                showPassword
+                    ? Icons.remove_red_eye
+                    : Icons.remove_red_eye,
+                size: 16.h,
+              ),
+            )
                 : widget.suffixIcon,
             suffixIconConstraints: widget.needToSuffixConstraints
                 ? BoxConstraints(
-                    minHeight: 47,
-                    minWidth: widget.isResendSuffixIcon ? 30 : 1,
-                    maxHeight: 48,
-                    maxWidth: widget.isResendSuffixIcon ? 30 : 1,
-                  )
+              minHeight: 47,
+              minWidth: widget.isResendSuffixIcon ? 30 : 1,
+              maxHeight: 48,
+              maxWidth: widget.isResendSuffixIcon ? 30 : 1,
+            )
                 : null,
             contentPadding: EdgeInsets.symmetric(
               horizontal: 12,
               vertical: widget.height < 49
                   ? widget.suffixIcon != null || widget.prefixIcon != null
-                      ? 0
-                      : widget.height - 30
+                  ? 0
+                  : widget.height - 30
                   : (7.h + widget.height - 50.h),
             ),
           ),

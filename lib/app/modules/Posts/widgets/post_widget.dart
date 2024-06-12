@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_chat_types/flutter_chat_types.dart';
 import 'package:flutter_firebase_chat_core/flutter_firebase_chat_core.dart';
 import 'package:get/get.dart';
-import 'package:hallo_doctor_client/app/models/doctor_model.dart';
-import 'package:hallo_doctor_client/app/utils/constants/sizes_manager.dart';
-import 'package:hallo_doctor_client/app/utils/extensions/num.dart';
+import 'package:hallo_doctor_doctor_app/app/models/doctor_model.dart';
+import 'package:hallo_doctor_doctor_app/app/utils/constants/sizes_manager.dart';
+import 'package:hallo_doctor_doctor_app/app/utils/extensions/num.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:rich_text_view/rich_text_view.dart';
 import '../../../models/post_model.dart';
@@ -57,7 +57,7 @@ class PostWidget extends GetView<PostsController> {
                     imageUrl: post.user?.photoUrl,
                   );
                   Room room =
-                      await FirebaseChatCore.instance.createRoom(otherUser);
+                  await FirebaseChatCore.instance.createRoom(otherUser);
                   Get.toNamed(
                     '/chat',
                     arguments: [
@@ -193,7 +193,7 @@ class InteractionsWidget extends StatelessWidget {
           GestureDetector(
             onTap: () {
               Get.to(
-                () => CommentsView(
+                    () => CommentsView(
                   post: post,
                 ),
                 transition: Transition.downToUp,
