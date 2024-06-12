@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
-import 'package:hallo_doctor_client/app/models/user_model.dart';
+import 'package:hallo_doctor_doctor_app/app/models/user_model.dart';
 
 class PostModel {
   String? id;
