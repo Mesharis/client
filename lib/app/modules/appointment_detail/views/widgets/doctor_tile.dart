@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:google_fonts/google_fonts.dart';
-
 import '../../../../utils/styles/styles.dart';
 import '../../../../utils/timeformat.dart';
 
@@ -61,7 +59,7 @@ class DoctorTile extends StatelessWidget {
               children: <Widget>[
                 Text(
                   name,
-                  style: GoogleFonts.nunito(
+                  style: TextStyle(
                       fontSize: 14,
                       fontWeight: FontWeight.w700,
                       color: Colors.black),
@@ -70,7 +68,7 @@ class DoctorTile extends StatelessWidget {
                   child: Text(
                     'Order at : '.tr +
                         TimeFormat().formatDate(orderTime.toLocal()),
-                    style: GoogleFonts.nunito(
+                    style: TextStyle(
                         fontWeight: FontWeight.w700, color: Colors.grey),
                     maxLines: 2,
                     softWrap: false,

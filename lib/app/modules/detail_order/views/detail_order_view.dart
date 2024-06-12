@@ -3,11 +3,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:hallo_doctor_client/app/models/order_detail_model.dart';
-import 'package:hallo_doctor_client/app/utils/constants/constants.dart';
-import 'package:hallo_doctor_client/app/utils/constants/style_constants.dart';
-import 'package:hallo_doctor_client/app/utils/styles/styles.dart';
-
+import '../../../models/order_detail_model.dart';
+import '../../../utils/constants/constants.dart';
+import '../../../utils/constants/style_constants.dart';
+import '../../../utils/styles/styles.dart';
 import '../controllers/detail_order_controller.dart';
 
 enum ChosePayment { addCard, creditCard }

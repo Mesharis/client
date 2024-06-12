@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '../../../utils/constants/style_constants.dart';
 import 'package:intl/intl.dart';
 
@@ -135,7 +134,7 @@ class ConsultationDatePickerView
                                     '$timeStartFormat - $timeEndFormat${'\n Unavailable'.tr}',
                                     textAlign: TextAlign.center,
                                     style:
-                                        GoogleFonts.nunito(color: Colors.white),
+                                    TextStyle(color: Colors.white),
                                   ),
                                   decoration: BoxDecoration(
                                     color: Colors.grey[800],

@@ -5,10 +5,8 @@ import 'package:flutter/services.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:form_builder_validators/form_builder_validators.dart';
 import 'package:get/get.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:hallo_doctor_client/app/modules/widgets/submit_button.dart';
-import 'package:hallo_doctor_client/app/utils/styles/styles.dart';
-
+import '../../../utils/styles/styles.dart';
+import '../../widgets/submit_button.dart';
 import '../controllers/consultation_confirm_controller.dart';
 
 class ConsultationConfirmView extends GetView<ConsultationConfirmController> {
@@ -39,7 +37,7 @@ class ConsultationConfirmView extends GetView<ConsultationConfirmController> {
                       'Has the consultation with the'.tr +
                           controller.timeSlot.doctor!.doctorName! +
                           'been completed?'.tr,
-                      style: GoogleFonts.nunito(fontSize: 25),
+                      style: TextStyle(fontSize: 25),
                     ),
                     SizedBox(
                       height: 30,
