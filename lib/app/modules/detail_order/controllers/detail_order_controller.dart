@@ -36,7 +36,7 @@ class DetailOrderController extends GetxController {
         itemName: 'Consultation with'.tr + doctor.doctorName!,
         time: time,
         duration: selectedTimeSlot.duration.toString() + ' minute'.tr,
-        price: currencySign + selectedTimeSlot.price.toString(),
+        price: selectedTimeSlot.price.toString(),
         link: [selectedTimeSlot.link!],
         doctorId: selectedTimeSlot.doctorid!,
         userId: userService.currentUser!.uid,
