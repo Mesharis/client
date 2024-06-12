@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:hallo_doctor_doctor_app/app/utils/extensions/export.dart';
+import 'package:hallo_doctor_client/app/utils/extensions/export.dart';
 import '../../utils/colors_manager.dart';
 import '../../utils/constants/styles_manager.dart';
 

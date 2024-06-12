@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
-import 'package:hallo_doctor_doctor_app/app/utils/constants/font_manager.dart';
-import 'package:hallo_doctor_doctor_app/app/utils/extensions/num.dart';
+import 'package:hallo_doctor_client/app/utils/constants/font_manager.dart';
+import 'package:hallo_doctor_client/app/utils/extensions/num.dart';
 
 import '../../../utils/constants/sizes_manager.dart';
 import '../../../utils/constants/styles_manager.dart';

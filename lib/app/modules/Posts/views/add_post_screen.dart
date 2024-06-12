@@ -6,12 +6,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:hallo_doctor_doctor_app/app/modules/Posts/controllers/posts_controller.dart';
-import 'package:hallo_doctor_doctor_app/app/modules/Posts/widgets/progress_button.dart';
-import 'package:hallo_doctor_doctor_app/app/utils/colors_manager.dart';
-import 'package:hallo_doctor_doctor_app/app/utils/constants/sizes_manager.dart';
-import 'package:hallo_doctor_doctor_app/app/utils/extensions/num.dart';
-import 'package:hallo_doctor_doctor_app/app/utils/styles/styles.dart';
+import 'package:hallo_doctor_client/app/modules/Posts/controllers/posts_controller.dart';
+import 'package:hallo_doctor_client/app/modules/Posts/widgets/progress_button.dart';
+import 'package:hallo_doctor_client/app/utils/colors_manager.dart';
+import 'package:hallo_doctor_client/app/utils/constants/sizes_manager.dart';
+import 'package:hallo_doctor_client/app/utils/extensions/num.dart';
+import 'package:hallo_doctor_client/app/utils/styles/styles.dart';
 import 'package:iconsax/iconsax.dart';
 
 class AddPostScreen extends GetView<PostsController> {
