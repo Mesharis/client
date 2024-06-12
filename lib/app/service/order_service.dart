@@ -1,5 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart' hide Order;
-import 'package:hallo_doctor_client/app/models/order_detail_model.dart';
+import '../models/order_detail_model.dart';
 import '../models/order_model.dart';
 import '../models/time_slot_model.dart';
 import 'user_service.dart';

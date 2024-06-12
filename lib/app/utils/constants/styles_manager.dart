@@ -1,5 +1,6 @@
 import 'package:flutter/widgets.dart';
-import 'package:hallo_doctor_client/app/utils/constants/font_manager.dart';
+
+import 'font_manager.dart';
 
 //TextStyle builder method
 TextStyle _getTextStyle({
