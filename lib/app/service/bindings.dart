@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:hallo_doctor_doctor_app/app/service/timeslot_service.dart';
+import 'package:hallo_doctor_client/app/service/timeslot_service.dart';
 import '../modules/Posts/controllers/posts_controller.dart';
 import '../modules/appointment/controllers/appointment_controller.dart';
 import '../modules/dashboard/controllers/dashboard_controller.dart';

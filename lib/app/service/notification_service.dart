@@ -14,7 +14,7 @@ import 'package:flutter_callkit_incoming/entities/notification_params.dart';
 import 'package:flutter_callkit_incoming/flutter_callkit_incoming.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:get/get.dart';
-import 'package:hallo_doctor_doctor_app/app/service/timeslot_service.dart';
+import 'package:hallo_doctor_client/app/service/timeslot_service.dart';
 import 'package:jiffy/jiffy.dart';
 import 'package:timezone/data/latest_all.dart' as tz;
 import 'package:timezone/timezone.dart' as tz;
